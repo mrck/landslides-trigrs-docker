@@ -1,0 +1,18 @@
+version: 1.0.{build}
+image: Ubuntu1804
+build_script:
+- sh: docker build -t trigrs .
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: FhY46IdeJxUIp3ZcQc3n+7qgc+eFlZNTbqkJTxKlfI0iB9GZ3kMGQq+tK3yArSc7
+  repository: mrck/landslides-trigrs-docker
+  on:
+    branch: master
+- provider: GitHub
+  auth_token:
+    secure: FhY46IdeJxUIp3ZcQc3n+7qgc+eFlZNTbqkJTxKlfI0iB9GZ3kMGQq+tK3yArSc7
+  repository: mrck/landslides-trigrs-docker
+  prerelease: true
+  on:
+    branch: develop
