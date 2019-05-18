@@ -1,7 +1,7 @@
 #Based on: https://medium.com/@urban_institute/fortran-and-docker-how-to-combine-legacy-code-with-cutting-edge-components-35e934b15023
 
 FROM centos:centos7.6.1810
-MAINTAINER Collin Kleine <collin.kleine@gmail.com>
+LABEL maintainer="Collin Kleine <collin.kleine@gmail.com>"
 RUN yum update -y
 
 # add fortran, c++ compiler, wget, debugging tools, gsl, and make
