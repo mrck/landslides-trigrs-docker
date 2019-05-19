@@ -8,6 +8,9 @@ build_script:
     docker build -t trigrs .
 
     docker save --output trigrs-docker-image.tar trigrs
+artifacts:
+- path: trigrs-docker-image.tar
+  name: landslides-trigrs-docker
 deploy:
 - provider: GitHub
   release: landslides-trigrs-docker-v1.0.{build}
