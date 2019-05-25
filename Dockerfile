@@ -13,8 +13,7 @@ yum clean all;
 RUN mkdir /mpich;\
 cd /mpich/;\
 wget http://www.mpich.org/static/downloads/3.3/mpich-3.3.tar.gz;\
-tar xfz ./landslides-trigrs-2.1.0.tar.gz;\
-rm -f ./landslides-trigrs-2.1.0.tar.gz;\
+tar xfz ./mpich-3.3.tar.gz;\
 cd mpich-3.3;\
 ./configure;\
 make;\
