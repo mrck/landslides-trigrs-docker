@@ -17,7 +17,7 @@ artifacts:
   name: landslides-trigrs-docker
 deploy:
 - provider: GitHub
-  release: landslides-trigrs-docker-v1.0.{build}
+  release: landslides-trigrs-2.1.0-dockerimage-$(appveyor_build_version)
   auth_token:
     secure: FhY46IdeJxUIp3ZcQc3n+7qgc+eFlZNTbqkJTxKlfI0iB9GZ3kMGQq+tK3yArSc7
   repository: mrck/landslides-trigrs-docker
@@ -25,7 +25,7 @@ deploy:
   on:
     branch: master
 - provider: GitHub
-  release: landslides-trigrs-docker-v1.0.{build}-alpha
+  release: landslides-trigrs-2.1.0-dockerimage-$(appveyor_build_version)-alpha
   auth_token:
     secure: FhY46IdeJxUIp3ZcQc3n+7qgc+eFlZNTbqkJTxKlfI0iB9GZ3kMGQq+tK3yArSc7
   repository: mrck/landslides-trigrs-docker
