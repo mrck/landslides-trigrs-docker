@@ -2,7 +2,6 @@
 
 FROM centos:centos7.6.1810
 LABEL maintainer="Collin Kleine <collin.kleine@gmail.com>"
-RUN 
 
 # add fortran, c++ compiler, wget, debugging tools, gsl, and make
 RUN yum update -y;\
